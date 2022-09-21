@@ -26,7 +26,8 @@ const dummyTodos = [
 const Home = () => {
     return (
         <div className={style.container}>
-            <Todos todos={dummyTodos}/>
+            <h1 style={{ color: "white" }}>Todo App</h1>
+            <Todos todos={dummyTodos} />
         </div>
     )
 }
