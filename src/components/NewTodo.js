@@ -4,7 +4,7 @@ import style from './newtodo.module.css';
 
 
 
-const NewTodo = () => {
+const NewTodo = (props) => {
 
     const [todo, setTodo] = useState({ title: "", desc: "" });
 
@@ -19,7 +19,8 @@ const NewTodo = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(todo);
+        props.onAddTodo(todo);
+        setTodo({ title: "", desc: "" })
     }
 
     return (
