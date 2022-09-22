@@ -8,13 +8,13 @@ const NewTodo = () => {
     return (
         <form className={style.form}>
 
-            <div>
+            <div className={style["form-field"]}>
                 <label htmlFor="title">Title: </label>
                 <input type="text" name="title" id="title" />
             </div>
 
-            <div>
-                <label htmlFor="desc">Title: </label>
+            <div className={style["form-field"]}>
+                <label htmlFor="desc">Description: </label>
                 <textarea type="text" name="desc" id="desc" />
             </div>
 
