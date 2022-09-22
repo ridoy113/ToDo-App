@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import style from './newtodo.module.css';
+
+
+
 
 const NewTodo = () => {
     return (
-        <form>
+        <form className={style.form}>
 
             <div>
                 <label htmlFor="title">Title: </label>
