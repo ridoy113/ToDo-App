@@ -8,7 +8,7 @@ const Todo = (props) => {
     const { id } = props;
 
     const handleClick = (id) => {
-        alert(id);
+        props.onRemoveItem(id);
     }
 
     return (

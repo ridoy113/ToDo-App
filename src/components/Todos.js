@@ -4,7 +4,7 @@ import style from './todos.module.css'
 
 
 const Todos = (props) => {
-    console.log(props.todos);
+
 
 
     return (
@@ -12,7 +12,7 @@ const Todos = (props) => {
 
             {
                 props.todos.map((todo) => (
-                    <Todo todo={todo.todo} key={todo.id} id={todo.id} />
+                    <Todo todo={todo.todo} key={todo.id} id={todo.id} onRemoveItem={props.onRemoveTodo} />
                 ))
             }
 
