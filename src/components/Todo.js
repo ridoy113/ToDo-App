@@ -4,7 +4,12 @@ import style from './todo.module.css';
 
 const Todo = (props) => {
 
-    const { title, id, desc } = props.todo;
+    const { title, desc } = props.todo;
+    const { id } = props;
+
+    const handleClick = (id) => {
+        alert(id);
+    }
 
     return (
         <article className={style.todo}>
@@ -14,7 +19,7 @@ const Todo = (props) => {
             </div>
 
             <div>
-                <button className={style.btn}>
+                <button className={style.btn} onClick={() => { handleClick(id) }}>
                     <i className='fa fa-trash fa-2x'></i>
                 </button>
             </div>
